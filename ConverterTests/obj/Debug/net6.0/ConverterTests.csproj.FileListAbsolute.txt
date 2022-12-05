@@ -99,3 +99,12 @@ C:\Users\giorgin\source\repos\UnitConverter\ConverterTests\obj\Debug\net6.0\refi
 C:\Users\giorgin\source\repos\UnitConverter\ConverterTests\obj\Debug\net6.0\ConverterTests.pdb
 C:\Users\giorgin\source\repos\UnitConverter\ConverterTests\obj\Debug\net6.0\ConverterTests.genruntimeconfig.cache
 C:\Users\giorgin\source\repos\UnitConverter\ConverterTests\obj\Debug\net6.0\ref\ConverterTests.dll
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.csproj.AssemblyReference.cache
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.AssemblyInfoInputs.cache
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.AssemblyInfo.cs
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.csproj.CoreCompileInputs.cache
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.dll
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ref\ConverterTests.dll
+C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\ConverterTests\obj\Debug\net6.0\ConverterTests.pdb

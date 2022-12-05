@@ -1,4 +1,7 @@
-﻿using UnitConverter.Units;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnitConverter.Units;
 
 namespace UnitConverter.Base
 {

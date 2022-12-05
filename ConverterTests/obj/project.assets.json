@@ -6224,23 +6224,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\giorgin\\.nuget\\packages\\": {},
+    "C:\\Users\\Phoenix\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\ConverterTests\\ConverterTests.csproj",
+      "projectUniqueName": "C:\\Users\\Phoenix\\Desktop\\ABSA\\UnitConverter-master\\ConverterTests\\ConverterTests.csproj",
       "projectName": "ConverterTests",
-      "projectPath": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\ConverterTests\\ConverterTests.csproj",
-      "packagesPath": "C:\\Users\\giorgin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\ConverterTests\\obj\\",
+      "projectPath": "C:\\Users\\Phoenix\\Desktop\\ABSA\\UnitConverter-master\\ConverterTests\\ConverterTests.csproj",
+      "packagesPath": "C:\\Users\\Phoenix\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Phoenix\\Desktop\\ABSA\\UnitConverter-master\\ConverterTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\giorgin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Phoenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6249,15 +6249,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://10.20.1.152:8081/repository/nuget-hosted/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\UnitConverter\\UnitConverter.csproj": {
-              "projectPath": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\UnitConverter\\UnitConverter.csproj"
+            "C:\\Users\\Phoenix\\Desktop\\ABSA\\UnitConverter-master\\UnitConverter\\UnitConverter.csproj": {
+              "projectPath": "C:\\Users\\Phoenix\\Desktop\\ABSA\\UnitConverter-master\\UnitConverter\\UnitConverter.csproj"
             }
           }
         }
@@ -6304,7 +6303,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -30,7 +30,8 @@ namespace UnitConverter.Converters.Distance
 
         }
 
-
+        //meter to inch
+        //bits to bytes
         public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
         {
             return Math.Round(value / ((decimal)3.281 * UnitModifier), 6);
