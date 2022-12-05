@@ -1,0 +1,12 @@
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\bin\Debug\net6.0\UnitConverter.deps.json
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\bin\Debug\net6.0\UnitConverter.dll
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\bin\Debug\net6.0\UnitConverter.pdb
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.csproj.AssemblyReference.cache
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.AssemblyInfoInputs.cache
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.AssemblyInfo.cs
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.csproj.CoreCompileInputs.cache
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.dll
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\refint\UnitConverter.dll
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.pdb
+C:\Users\giorgin\source\repos\UnitConverter\UnitConverter\obj\Debug\net6.0\ref\UnitConverter.dll
