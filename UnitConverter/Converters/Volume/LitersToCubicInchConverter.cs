@@ -5,16 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using UnitConverter.Base;
 
-namespace UnitConverter.Converters.Memory
+namespace UnitConverter.Converters.Volume
 {
-    public class BitsToBytesConverter : BaseConverter
+    public class LitersToCubicInchConverter: BaseConverter
     {
-        public BitsToBytesConverter()
+        public LitersToCubicInchConverter()
         {
-            fromValueSynonims = new List<string>() { "bit", "bits", "b" };
-            toValueSynonims = new List<string>() { "byte", "bytes" };
+            fromValueSynonims = new List<string>() { "liter", "liters", "l" };
+            toValueSynonims = new List<string>() { "cubic inch", "cubic inches" };
+            conversionLogic = new LittersToCubicInchConversion();
             validator = new BaseValidator(fromValueSynonims, toValueSynonims);
-            conversionLogic = new BitsToBytesConversion();
+
         }
         protected override List<string> fromValueSynonims { get; set; }
         protected override List<string> toValueSynonims { get; set; }
@@ -23,17 +24,16 @@ namespace UnitConverter.Converters.Memory
 
     }
 
-    public class BitsToBytesConversion : BaseConversion
+    public class LittersToCubicInchConversion: BaseConversion
     {
         public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value / ((decimal)0.125 * UnitModifier), 6);
+            return Math.Round(value * (decimal)61.024 * UnitModifier, 6);
         }
 
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value * (decimal)0.125 * UnitModifier, 6);
-
+            return Math.Round(value / ((decimal)61.024 * UnitModifier), 6);
         }
     }
 }

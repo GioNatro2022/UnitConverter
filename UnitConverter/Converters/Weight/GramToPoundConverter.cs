@@ -11,8 +11,9 @@ namespace UnitConverter.Converters.Weight
     {
         public GramToPoundConverter()
         {
-            fromValueSynonims =new List<string>{"gram", "grams", "g" };
+            fromValueSynonims =new List<string>{"gram", "grams", "g", "gm" };
             toValueSynonims = new List<string> { "pound", "pounds", "lb", "lbs" };
+            validator = new BaseValidator(fromValueSynonims, toValueSynonims);
             conversionLogic = new GramToPoundConversion();
             
         }
@@ -20,6 +21,8 @@ namespace UnitConverter.Converters.Weight
         protected override List<string> fromValueSynonims { get; set ; }
         protected override List<string> toValueSynonims { get; set; }
         protected override BaseConversion conversionLogic { get; set; }
+        protected override BaseValidator validator { get; set; }
+
     }
     public class GramToPoundConversion : BaseConversion
     {

@@ -21,7 +21,6 @@ namespace UnitConverter.Units
             {"giga",   1000000000},
             {"mega",   1000000},
             {"kilo",   1000},
-            {"K",      1000},
             {"hecto",  100},
             {"deca",   10},
             {"deci",   (decimal)0.1},

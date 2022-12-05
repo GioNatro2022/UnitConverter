@@ -13,12 +13,15 @@ namespace UnitConverter.Converters.Distance
         {
             fromValueSynonims = new List<string>() { "meter", "meters", "m"};
             toValueSynonims = new List<string>() { "feet", "feets", "ft" };
+            validator = new BaseValidator(fromValueSynonims, toValueSynonims);
             conversionLogic = new MeterToFeetConversion();
+            
         }
 
         protected override List<string> fromValueSynonims { get ; set; }
         protected override List<string> toValueSynonims { get; set ; }
         protected override BaseConversion conversionLogic { get; set ; }
+        protected override BaseValidator validator { get; set ; }
     }
 
     public class MeterToFeetConversion : BaseConversion

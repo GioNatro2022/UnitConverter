@@ -7,15 +7,14 @@ namespace UnitConverter.Base
 {
     public abstract class BaseConverter
     {
-
-       // private BaseSynonim rightValue;
-       // private BaseSynonim leftValue;
-
-
         protected abstract List<string> fromValueSynonims { get; set; }
         protected abstract List<string> toValueSynonims { get; set; }
+        protected abstract BaseValidator validator { get; set; }
         protected abstract BaseConversion conversionLogic { get; set; }
-        
+        public BaseConverter()
+        {
+            validator = new BaseValidator(fromValueSynonims, toValueSynonims);
+        }
 
         public decimal PerformConversion(string fromValueUnit, string toUnit)
         {
@@ -25,13 +24,13 @@ namespace UnitConverter.Base
             fromValueUnit=fromValueUnit.ToLower();
             toUnit = toUnit.ToLower();
 
+
+            validator.Validate(fromValueUnit, toUnit);
+
             var splits = fromValueUnit.Split(' ');
-            
-            if (splits.Length!=2)
-                throw new ArgumentException("invalid input, value and unit should be separated by single space");
-            
             var value = Convert.ToDecimal(splits[0]);
             var unit = splits[1];
+
             var prefix= SiPrefixes.Prefixes.Where(p => unit.Contains(p.Key)).FirstOrDefault();
             var secondPrefix= SiPrefixes.Prefixes.Where(p => toUnit.Contains(p.Key)).FirstOrDefault();
             
@@ -46,14 +45,14 @@ namespace UnitConverter.Base
                 secondModifier = secondPrefix.First();
                 toUnit = unit.Replace(secondPrefix.Key, "");
             }
-        
 
-            if ((toValueSynonims.Contains(unit) && toValueSynonims.Contains(toUnit) )|| (fromValueSynonims.Contains(unit) && fromValueSynonims.Contains(toUnit)))//if conversion is in same unit but different modifier
+            //if conversion is in same unit but different modifier
+            if ((toValueSynonims.Contains(unit) && toValueSynonims.Contains(toUnit) )|| (fromValueSynonims.Contains(unit) && fromValueSynonims.Contains(toUnit)))
             {
 
                 result = modifier / secondModifier * value;
             }
-            else if (toValueSynonims.Contains(unit))
+            else if (toValueSynonims.Contains(unit))// converting from left to right 
             {
 
                 if(!fromValueSynonims.Contains(toUnit))
@@ -61,22 +60,14 @@ namespace UnitConverter.Base
                 result = conversionLogic.RightToLeftConversion(value* modifier, secondModifier);
                 
             }
-            else if(fromValueSynonims.Contains(unit))
+            else //converting from right to left 
             {
                 if (!toValueSynonims.Contains(toUnit))
                     throw new ArgumentException($"Synonim for unit: {toUnit} not Found");
                 result  = conversionLogic.LeftToRightConversion(value * modifier, secondModifier);
 
-            }
-            else
-            {
-                throw new ArgumentException($"Synonim for unit: {unit} not Found");
-            }
-
+            }         
             return result;
-
-
-
         }
         
 

@@ -13,10 +13,14 @@ namespace UnitConverter.Converters.Distance
         {
             fromValueSynonims = new List<string>() { "meter", "meters", "m" };
             toValueSynonims = new List<string>(){"inch", "inches", "in"};
+            validator = new BaseValidator(fromValueSynonims, toValueSynonims);
+            conversionLogic = new MeterToInchCoversion();
         }
         protected override List<string> fromValueSynonims { get; set; }
         protected override List<string> toValueSynonims { get; set; }
         protected override BaseConversion conversionLogic { get; set; }
+        protected override BaseValidator validator { get; set; }
+
     }
 
     public class MeterToInchCoversion : BaseConversion
@@ -24,15 +28,14 @@ namespace UnitConverter.Converters.Distance
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
 
-            return Math.Round(value * (decimal)39.27 * UnitModifier, 6);
+            return Math.Round(value * (decimal)39.37 * UnitModifier, 6);
 
         }
 
-        //meter to inch
-        //bits to bytes
+    
         public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value / ((decimal)39.27 * UnitModifier), 6);
+            return Math.Round(value / ((decimal)39.37 * UnitModifier), 6);
         }
     }
 }

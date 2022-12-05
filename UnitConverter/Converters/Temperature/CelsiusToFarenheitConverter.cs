@@ -10,10 +10,14 @@ namespace UnitConverter.Converters.Temperature
             conversionLogic = new CelsiusToFarenheitConversion();
             fromValueSynonims = new List<string> {"celsius", "celsiuses", "c" };
             toValueSynonims = new List<string> { "farenheit", "farenheits", "f" };
+            validator = new BaseValidator(fromValueSynonims, toValueSynonims);
+
         }
         protected override List<string> fromValueSynonims { get; set; }
         protected override List<string> toValueSynonims { get; set; }
         protected override BaseConversion conversionLogic { get; set; }
+        protected override BaseValidator validator { get; set; }
+
     }
 
     public class CelsiusToFarenheitConversion : BaseConversion

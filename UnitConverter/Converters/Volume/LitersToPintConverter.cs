@@ -7,14 +7,14 @@ using UnitConverter.Base;
 
 namespace UnitConverter.Converters.Memory
 {
-    public class BitsToBytesConverter : BaseConverter
+    public class LitersToPintConverter: BaseConverter
     {
-        public BitsToBytesConverter()
+        public LitersToPintConverter()
         {
-            fromValueSynonims = new List<string>() { "bit", "bits", "b" };
-            toValueSynonims = new List<string>() { "byte", "bytes" };
+            fromValueSynonims = new List<string>() { "liter", "liters", "l" };
+            toValueSynonims = new List<string>() { "cubic inch", "cubic inches" };
             validator = new BaseValidator(fromValueSynonims, toValueSynonims);
-            conversionLogic = new BitsToBytesConversion();
+            conversionLogic = new LiterstoPintConversion();
         }
         protected override List<string> fromValueSynonims { get; set; }
         protected override List<string> toValueSynonims { get; set; }
@@ -23,17 +23,16 @@ namespace UnitConverter.Converters.Memory
 
     }
 
-    public class BitsToBytesConversion : BaseConversion
+    public class LiterstoPintConversion : BaseConversion
     {
         public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value / ((decimal)0.125 * UnitModifier), 6);
+            return Math.Round(value * (decimal)2.113 * UnitModifier, 6);
         }
 
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value * (decimal)0.125 * UnitModifier, 6);
-
+            return Math.Round(value / ((decimal)2.113 * UnitModifier), 6);
         }
     }
 }
