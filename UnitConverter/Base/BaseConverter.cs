@@ -10,6 +10,8 @@ namespace UnitConverter.Base
 
        // private BaseSynonim rightValue;
        // private BaseSynonim leftValue;
+
+
         protected abstract List<string> fromValueSynonims { get; set; }
         protected abstract List<string> toValueSynonims { get; set; }
         protected abstract BaseConversion conversionLogic { get; set; }
@@ -32,17 +34,26 @@ namespace UnitConverter.Base
             var unit = splits[1];
             var prefix= SiPrefixes.Prefixes.Where(p => unit.Contains(p.Key)).FirstOrDefault();
             var secondPrefix= SiPrefixes.Prefixes.Where(p => toUnit.Contains(p.Key)).FirstOrDefault();
+            
             if (prefix != null)
             {
                 unit = unit.Replace(prefix.Key, "");
                 modifier = prefix.First();
-            }
+            }                       
 
             if (secondPrefix != null)
+            {
                 secondModifier = secondPrefix.First();
+                toUnit = unit.Replace(secondPrefix.Key, "");
+            }
+        
 
+            if ((toValueSynonims.Contains(unit) && toValueSynonims.Contains(toUnit) )|| (fromValueSynonims.Contains(unit) && fromValueSynonims.Contains(toUnit)))//if conversion is in same unit but different modifier
+            {
 
-            if (toValueSynonims.Contains(unit))
+                result = modifier / secondModifier * value;
+            }
+            else if (toValueSynonims.Contains(unit))
             {
 
                 if(!fromValueSynonims.Contains(toUnit))

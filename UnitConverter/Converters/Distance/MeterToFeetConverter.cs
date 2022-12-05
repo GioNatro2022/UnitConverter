@@ -13,7 +13,7 @@ namespace UnitConverter.Converters.Distance
         {
             fromValueSynonims = new List<string>() { "meter", "meters", "m"};
             toValueSynonims = new List<string>() { "feet", "feets", "ft" };
-
+            conversionLogic = new MeterToFeetConversion();
         }
 
         protected override List<string> fromValueSynonims { get ; set; }
@@ -21,7 +21,7 @@ namespace UnitConverter.Converters.Distance
         protected override BaseConversion conversionLogic { get; set ; }
     }
 
-    public class FeetToMeterConversion : BaseConversion
+    public class MeterToFeetConversion : BaseConversion
     {
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
