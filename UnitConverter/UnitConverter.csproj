@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Converters\Temperature\" />
+    <Folder Include="Converters\Volume\" />
+  </ItemGroup>
+
 </Project>

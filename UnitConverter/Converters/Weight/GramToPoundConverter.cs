@@ -21,6 +21,21 @@ namespace UnitConverter.Converters.Weight
         protected override List<string> toValueSynonims { get; set; }
         protected override BaseConversion conversionLogic { get; set; }
     }
+    public class GramToPoundConversion : BaseConversion
+    {
 
+
+        public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
+        {
+            return Math.Round(value / ((decimal)453.6 * UnitModifier), 6);
+        }
+
+        public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
+        {
+
+            return Math.Round(value * ((decimal)453.6 / UnitModifier), 6);
+
+        }
+    }
 
 }

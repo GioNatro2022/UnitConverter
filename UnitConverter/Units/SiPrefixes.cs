@@ -13,6 +13,7 @@ namespace UnitConverter.Units
             {"kilo", 1000 },
             {"giga", 1000000000 },
             {"mega", 1000000 }
+
         }.ToLookup(o => o.Key, o => o.Value);
 
 
