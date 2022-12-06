@@ -12,7 +12,7 @@ namespace UnitConverter.Converters.Volume
         public LitersToCubicInchConverter()
         {
             fromValueSynonims = new List<string>() { "liter", "liters", "l" };
-            toValueSynonims = new List<string>() { "cubic inch", "cubic inches" };
+            toValueSynonims = new List<string>() { "cubic inch", "cubic inches", "cubicinch", "cubicinches" };
             conversionLogic = new LittersToCubicInchConversion();
             validator = new BaseValidator(fromValueSynonims, toValueSynonims);
 
@@ -28,12 +28,14 @@ namespace UnitConverter.Converters.Volume
     {
         public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value * (decimal)61.024 * UnitModifier, 6);
+            return Math.Round(value / ((decimal)61.024 * UnitModifier), 6);
+
         }
 
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value / ((decimal)61.024 * UnitModifier), 6);
+            return Math.Round(value * (decimal)61.024 * UnitModifier, 6);
+
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using UnitConverter.Converters.Distance;
 using UnitConverter.Converters.Memory;
+using UnitConverter.Converters.Temperature;
+using UnitConverter.Converters.Volume;
 
-MeterToInchConverter converter = new MeterToInchConverter();
-BitsToBytesConverter converter2 = new BitsToBytesConverter();
+LitersToPintConverter converter = new LitersToPintConverter();
 
-Console.WriteLine(converter2.PerformConversion("-10 yleoba", "bits"));
+Console.WriteLine(converter.PerformConversion("10 liter", "pint"));
 
 

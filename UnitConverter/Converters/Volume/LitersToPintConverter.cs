@@ -12,7 +12,7 @@ namespace UnitConverter.Converters.Memory
         public LitersToPintConverter()
         {
             fromValueSynonims = new List<string>() { "liter", "liters", "l" };
-            toValueSynonims = new List<string>() { "cubic inch", "cubic inches" };
+            toValueSynonims = new List<string>() { "pint", "pints", "p" };
             validator = new BaseValidator(fromValueSynonims, toValueSynonims);
             conversionLogic = new LiterstoPintConversion();
         }
@@ -27,12 +27,13 @@ namespace UnitConverter.Converters.Memory
     {
         public override decimal RightToLeftConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value * (decimal)2.113 * UnitModifier, 6);
+            return Math.Round(value / ((decimal)2.113 * UnitModifier), 6);
         }
 
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value / ((decimal)2.113 * UnitModifier), 6);
+            return Math.Round(value * (decimal)2.113 * UnitModifier, 6);
+
         }
     }
 }
