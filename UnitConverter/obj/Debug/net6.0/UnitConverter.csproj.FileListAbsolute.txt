@@ -18,3 +18,15 @@ C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\UnitConverter\obj\Debug\net6.
 C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\UnitConverter\obj\Debug\net6.0\UnitConverter.dll
 C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\UnitConverter\obj\Debug\net6.0\ref\UnitConverter.dll
 C:\Users\Phoenix\Desktop\ABSA\UnitConverter-master\UnitConverter\obj\Debug\net6.0\UnitConverter.pdb
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\bin\Debug\net6.0\UnitConverter.deps.json
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\bin\Debug\net6.0\UnitConverter.dll
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\bin\Debug\net6.0\UnitConverter.pdb
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.csproj.AssemblyReference.cache
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.AssemblyInfoInputs.cache
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.AssemblyInfo.cs
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.csproj.CoreCompileInputs.cache
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.dll
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\refint\UnitConverter.dll
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\UnitConverter.pdb
+C:\Users\giorgin\Desktop\New folder (4)\UnitConverter\UnitConverter\obj\Debug\net6.0\ref\UnitConverter.dll

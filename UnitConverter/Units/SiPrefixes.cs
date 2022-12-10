@@ -25,7 +25,7 @@ namespace UnitConverter.Units
             {"deca",   10},
             {"deci",   (decimal)0.1},
             {"centi",  (decimal)0.01},
-            {"milli",  (decimal)0.001},
+            {"mili",  (decimal)0.001},
             {"micro",  (decimal)0.000001},
             {"nano",   (decimal)0.000000001},
             {"pico",   (decimal)0.000000000001},

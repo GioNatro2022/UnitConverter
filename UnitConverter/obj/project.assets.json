@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\UnitConverter\\UnitConverter.csproj",
+      "projectUniqueName": "C:\\Users\\giorgin\\Desktop\\New folder (4)\\UnitConverter\\UnitConverter\\UnitConverter.csproj",
       "projectName": "UnitConverter",
-      "projectPath": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\UnitConverter\\UnitConverter.csproj",
+      "projectPath": "C:\\Users\\giorgin\\Desktop\\New folder (4)\\UnitConverter\\UnitConverter\\UnitConverter.csproj",
       "packagesPath": "C:\\Users\\giorgin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\giorgin\\source\\repos\\UnitConverter\\UnitConverter\\obj\\",
+      "outputPath": "C:\\Users\\giorgin\\Desktop\\New folder (4)\\UnitConverter\\UnitConverter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

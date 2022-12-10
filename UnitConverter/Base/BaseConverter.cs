@@ -21,11 +21,13 @@ namespace UnitConverter.Base
             decimal result;
             decimal modifier = 1;
             decimal secondModifier=1;
-            fromValueUnit=fromValueUnit.ToLower();
+
+            validator.Validate(fromValueUnit, toUnit);
+
+            fromValueUnit = fromValueUnit.ToLower();
             toUnit = toUnit.ToLower();
 
 
-            validator.Validate(fromValueUnit, toUnit);
 
             var splits = fromValueUnit.Split(' ');
             var value = Convert.ToDecimal(splits[0]);
@@ -43,7 +45,7 @@ namespace UnitConverter.Base
             if (secondPrefix != null)
             {
                 secondModifier = secondPrefix.First();
-                toUnit = unit.Replace(secondPrefix.Key, "");
+                toUnit = toUnit.Replace(secondPrefix.Key, "");
             }
 
             //if conversion is in same unit but different modifier

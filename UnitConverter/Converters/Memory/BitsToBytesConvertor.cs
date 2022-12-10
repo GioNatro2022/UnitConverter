@@ -32,7 +32,7 @@ namespace UnitConverter.Converters.Memory
 
         public override decimal LeftToRightConversion(decimal value, decimal UnitModifier = 1)
         {
-            return Math.Round(value * (decimal)0.125 * UnitModifier, 6);
+            return Math.Round(value * (decimal)0.125 / UnitModifier, 6);
 
         }
     }

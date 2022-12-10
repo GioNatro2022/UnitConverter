@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnitConverter.Base;
 
-namespace UnitConverter.Converters.Memory
+namespace UnitConverter.Converters.Volume
 {
     public class LitersToPintConverter: BaseConverter
     {
